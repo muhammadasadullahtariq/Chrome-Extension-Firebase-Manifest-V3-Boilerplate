@@ -1,10 +1,24 @@
-# React Chrome Extension Boilerplate
+
+
+# React Chrome Extension Firebase Boilerplate
+
+
+## Features
+
+Firebase Authentication.
+Functionality to fetch id token in background script
+Login user using all the login options offer by firebase
+Link extension with your website
+API call in background script
+Enabling Tailwind CSS for design
+No Additional permissions needed to enable firebase
 
 ## Getting Started
 
 1. `npm i` to install dependancies
-2. `npm start` to start running the fast development mode Webpack build process that bundle files into the `dist` folder
-3. `npm i --save-dev <package_name>` to install new packages
+2. Add the firebase credentials it utils in `firebase_config.ts` file
+3. `npm start` to start running the fast development mode Webpack build process that bundle files into the `dist` folder
+4. `npm i --save-dev <package_name>` to install new packages
 
 ## Loading The Chrome Extension
 
