@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "react-toastify/dist/ReactToastify.css";
+body {
+  background-color: #f5f5f5;
+  width: 460px;
+  height: 512px;
+  font-family: "Roboto";
+  margin: 0;
+}
+.bg-primary {
+  background-color: #1b5696;
+}
+.deactive-btn {
+  background-color: #1b5696;
+  color: #555;
+}
+.active-btn {
+  background-color: linear-gradient(
+    -45deg,
+    #0c2f55 0%,
+    #04befe 100%
+  ) !important;
+  color: white !important;
+}
+
+.loader {
+  border: 7px solid #e3e3e3;
+  border-radius: 50%;
+  border-top: 7px solid #1b5696;
+  width: 70px;
+  height: 70px;
+  -webkit-animation: spin 0.8s linear infinite; /* Safari */
+  animation: spin 0.8s linear infinite;
+}
+
+.spinner {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  border-top: 2px solid white;
+  width: 12px;
+  height: 12px;
+  -webkit-animation: spin 0.8s linear infinite; /* Safari */
+  animation: spin 0.8s linear infinite;
+}
+.btn-spinner {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  border-top: 2px solid black;
+  width: 15px;
+  height: 15px;
+  -webkit-animation: spin 0.8s linear infinite; /* Safari */
+  animation: spin 0.8s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Firebase Extension",
+  "description": "Firebase Extension",
+  "version": "1.0.2",
+  "manifest_version": 3,
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Firebase Extension",
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "identity",
+    "storage",
+    "tabs",
+    "activeTab",
+    "offscreen"
+  ],
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'",
+    "sandbox": "sandbox allow-scripts; script-src 'self' 'https://apis.google.com/' 'https://www.gstatic.com/' 'https://*.firebaseio.com' 'https://www.googleapis.com' 'https://ajax.googleapis.com'; object-src 'self'"
+  },
+  "oauth2": {
+    "client_id": "102641335937482800951.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/userinfo.profile"
+    ]
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "copy.svg",
+        "edit.svg",
+        "delete.svg",
+        "back.svg",
+        "copied.svg"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "commands": {
+    "run-foo": {
+      "suggested_key": {
+        "default": "Alt+Shift+Y",
+        "mac": "Alt+Shift+Y"
+      },
+      "description": "Run \"foo\" on the current page."
+    },
+    "_execute_action": {
+      "suggested_key": {
+        "windows": "Alt+Shift+Y",
+        "mac": "Alt+Shift+Y",
+        "chromeos": "Alt+Shift+U",
+        "linux": "Alt+Shift+J"
+      }
+    }
+  }
+}

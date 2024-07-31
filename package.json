@@ -1,0 +1,36 @@
+{
+  "name": "copy-extension",
+  "version": "1.0.0",
+  "description": "Copy extension",
+  "scripts": {
+    "start": "webpack --watch --progress --config webpack.dev.js",
+    "build": "webpack --watch --progress --config webpack.prod.js"
+  },
+  "author": "",
+  "devDependencies": {
+    "@types/chrome": "^0.0.266",
+    "@types/react": "^18.2.78",
+    "@types/react-dom": "^18.2.25",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.1",
+    "html-webpack-plugin": "^5.6.0",
+    "postcss-loader": "^8.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^3.4.3",
+    "terser-webpack-plugin": "^5.3.10",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.10.0"
+  },
+  "dependencies": {
+    "firebase": "^10.12.3",
+    "font-awesome": "^4.7.0",
+    "jwt-decode": "^4.0.0",
+    "react-toastify": "^10.0.5"
+  }
+}
